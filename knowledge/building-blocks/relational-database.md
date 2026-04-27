@@ -43,3 +43,7 @@ A Relational Database stores rows in tables with defined columns and types. Tabl
 
 ## Related blocks
 - The most common "primary data store" in a system. Often paired with Key-Value Store for caching and File Store for blobs.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for Relational Database. Internalizing it, so you can apply it under pressure in unfamiliar codebases, interviews, and design reviews, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs, AI-graded design challenges, and real-company case studies.

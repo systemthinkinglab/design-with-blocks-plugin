@@ -44,3 +44,7 @@ A Queue is a durable pipe. Producers write messages to it; consumers (Workers) r
 
 ## Related blocks
 - Almost always paired with Worker. Often triggered by Service or File Store events.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for Queue. Internalizing it, so you can apply it under pressure in unfamiliar codebases, interviews, and design reviews, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs, AI-graded design challenges, and real-company case studies.

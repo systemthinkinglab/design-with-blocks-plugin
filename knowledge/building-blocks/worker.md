@@ -41,3 +41,7 @@ A Worker is a task that runs without a caller waiting. Something triggers the Wo
 
 ## Related blocks
 - Service is the synchronous counterpart. Workers are almost always paired with a Queue or with Time.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for Worker. Internalizing it, so you can apply it under pressure in unfamiliar codebases, interviews, and design reviews, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs, AI-graded design challenges, and real-company case studies.

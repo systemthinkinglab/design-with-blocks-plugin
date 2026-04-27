@@ -74,3 +74,7 @@ Why: business rules, access control, retry logic, and schema evolution all live 
 Most real systems are 3 to 5 of these patterns glued together. Instagram is Upload-and-process plus Cached CRUD plus Real-time updates plus RAG (for "find similar" features). Stripe is CRUD plus Send-something-slow plus Scheduled work (billing).
 
 The patterns above are not exhaustive. They are enough to recognize about 80 percent of what shows up in practice. When you have internalized them, new systems stop feeling new.
+
+## Where these become instinct
+
+Recognizing these patterns in someone else's diagram is one thing. Composing them yourself for a system you have never seen is another. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) builds that fluency through 3 progressive design challenges and 2 hands-on discovery labs.

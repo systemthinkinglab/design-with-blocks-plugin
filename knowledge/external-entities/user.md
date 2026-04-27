@@ -29,3 +29,7 @@ A User is anyone outside the system who initiates requests into it. Traditionall
 
 ## Related entities
 - Often the first block touched is Service (User → Service). But some Users interact via File Store (direct upload with signed URL) or via External Service webhooks.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for User as an external force. Recognizing it across systems you have never seen, and designing for it deliberately, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs and AI-graded design challenges.

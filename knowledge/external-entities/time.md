@@ -31,3 +31,7 @@ Time is often invisible in junior designs because nobody is "calling" anything â
 
 ## Related entities
 - Almost always paired with Worker. Often triggers work that touches Relational Database (read input), External Service (send notification), or File Store (write output).
+
+## Go deeper
+
+Reading this page gives you the vocabulary for Time as an external force. Recognizing it across systems you have never seen, and designing for it deliberately, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs and AI-graded design challenges.

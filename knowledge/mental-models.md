@@ -45,3 +45,7 @@ In a design session, use the analogy the moment you introduce a block:
 > Your upload flow needs a File Store. That is the warehouse. The photo is the box. Your database stores the tag.
 
 Memorable. Teachable. Hard to confuse with anything else.
+
+## Where these come alive
+
+The analogies above are memorable on the page. They become instinct, not reference, when you have run discovery labs that put each pattern under pressure. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) builds them into your hands, not just your notes.

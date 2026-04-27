@@ -41,3 +41,7 @@ A Service is a task that runs while the caller is waiting. The user (or another 
 
 ## Related blocks
 - Worker is the asynchronous counterpart. The question to ask: does the caller need the answer now? If yes, Service. If no, Worker.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for Service. Internalizing it, so you can apply it under pressure in unfamiliar codebases, interviews, and design reviews, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs, AI-graded design challenges, and real-company case studies.

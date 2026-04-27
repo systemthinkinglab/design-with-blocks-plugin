@@ -40,3 +40,7 @@ A Key-Value Store maps a key (a string or bytes) to a value (anything) with O(1)
 
 ## Related blocks
 - Often sits in front of Relational Database or File Store as a cache. Not a replacement for either.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for Key-Value Store. Internalizing it, so you can apply it under pressure in unfamiliar codebases, interviews, and design reviews, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs, AI-graded design challenges, and real-company case studies.

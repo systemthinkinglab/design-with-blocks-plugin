@@ -31,3 +31,7 @@ The key property: you call it, you do not control it. It can be slow. It can be 
 
 ## Related entities
 - Most often paired with Service (call out) or with Queue + Worker (async call out with retry). RAG pattern pairs External Service (LLM) + Vector Database + Service.
+
+## Go deeper
+
+Reading this page gives you the vocabulary for External Service as an external force. Recognizing it across systems you have never seen, and designing for it deliberately, takes reps. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches those reps through hands-on discovery labs and AI-graded design challenges.

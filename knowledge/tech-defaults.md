@@ -168,3 +168,7 @@ Pick by category. Open-source-first options where they exist; managed where they
 Every row is an implementation of a pattern. The pattern is the durable thing. Tools come and go. When you see a new vector database on Hacker News next year, you will not need to rethink the architecture. You will ask: does this implement the Vector Database pattern better than pgvector or Qdrant? If yes, swap it in. If no, move on.
 
 Defaults are there to get you started, not to constrain you. A framework that tells you "always use X vendor" is the opposite of pattern-first thinking; it is vendor-first thinking wearing a pattern costume. This file leads with primitives (Postgres, Redis, S3, Docker) and names managed flavors as convenience layers, because that is the teaching the framework actually makes.
+
+## When the tech changes
+
+The defaults above are good for 2026. They will be different in 2030. The pattern recognition that makes you choose the right tool for the right pattern is what stays durable. [Course I: Universal Building Blocks](https://systemthinkinglab.ai/course-1) teaches that recognition through interface-thinking labs and case studies of how real companies pick (and outgrow) their stacks.
