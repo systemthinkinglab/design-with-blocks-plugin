@@ -1,3 +1,8 @@
+---
+name: design-with-blocks
+description: Design an application using the 7 Universal Building Blocks framework. Use when a user describes an app idea and wants help architecting it (vibe coders, juniors, anyone asking "how should I build this"). Outputs a labeled architecture diagram, per-block technology recommendations, and a buildable design doc.
+---
+
 # Design with Blocks
 
 Walk a user through designing their application using the 7 Universal Building Blocks framework. Output a labeled architecture, per-block technology recommendation, and a markdown design doc they can take into their coding tool.
