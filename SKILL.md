@@ -149,6 +149,15 @@ Name the gap. Offer one sentence of correction. Move on. Do not lecture.
 
 Once the block inventory is stable, propose technology per block. Use `knowledge/tech-defaults.md` as the authoritative source. Lead with **open source and widely used** primitives (PostgreSQL, Redis, S3, RabbitMQ). Mention managed platforms (AWS, GCP, Fly, Render, Supabase) as **convenience layers on top** of the same primitives, never as the primitives themselves.
 
+**Default phrasing for Service and Worker (cloud-agnostic, framework-first):**
+
+- **Service** → `Docker Container + API framework`. Pick the framework based on the user's language: FastAPI or Flask for Python, Express or Hono for JS/TS, Rails for Ruby, Gin or Chi for Go, Spring Boot for Java/Kotlin.
+- **Worker** → `Docker Container + async framework`. Celery or RQ for Python, BullMQ for JS/TS, Sidekiq for Ruby, asynq for Go, Oban for Elixir.
+
+Do not name a deployment platform (Render, Fly, AWS, GCP, Kubernetes) as the *primary* recommendation for Service or Worker. The container + framework pair is what the user runs; where they run it (Render web service, EC2, Cloud Run, Kubernetes pod, App Runner) is an orthogonal taste choice they can revisit. Mention deployment targets only if the user asks.
+
+**Storage and external entities:** lead with the primitive (Postgres, Redis, RabbitMQ, S3 / MinIO, pgvector / Qdrant). For External Services, name the actual third-party concretely (Stripe, Twilio, SendGrid, OpenAI, Anthropic) with one sentence on why.
+
 Also: **packaging and deployment are not blocks.** Docker containers, Kubernetes, VMs, serverless functions are *how* you ship a block, not *what* the block is. If the user mentions Docker as if it were a pattern, redirect to what the container actually runs. See `knowledge/tech-defaults.md` for the "A note on containers, VMs, and orchestration" section.
 
 Frame technologies as **interchangeable within the pattern**. That is the whole point of pattern-first thinking: if the primitive is correct, the tool is a taste choice you can revisit.
@@ -179,12 +188,20 @@ Generate a markdown design doc. Structure:
 
 If the design has more than one instance of a block with distinct responsibility, list each separately ("Service 1 (auth)," "Service 2 (playback)"). Do not collapse different responsibilities into one row.
 
-| Instance | Role | Technology choice | Why | Learn more |
-|----------|------|-------------------|-----|------------|
-| Service 1 | [e.g. auth + upload] | [tech] | [1 sentence] | [/learn link for this block] |
-| Service 2 | [e.g. playback orchestration] | [tech] | [1 sentence] | [/learn link] |
-| Worker 1 | [e.g. ZIP parsing] | [tech] | [1 sentence] | [/learn link] |
+**Include external forces too** (User, External Service, Time) when they are part of the design. External Services are particularly worth naming concretely (e.g. "Stripe" for payments, "OpenAI" for LLM calls, "SendGrid" for email) along with why you are recommending each one.
+
+| Instance | Role | Technology choice | Why |
+|----------|------|-------------------|-----|
+| Service 1 | [e.g. auth + upload] | Docker Container + [framework] | [1 sentence] |
+| Service 2 | [e.g. playback orchestration] | Docker Container + [framework] | [1 sentence] |
+| Worker 1 | [e.g. photo processing] | Docker Container + [async framework] | [1 sentence] |
+| Queue 1 | [e.g. photo job pipeline] | [tech] | [1 sentence] |
+| Relational DB | [e.g. primary data store] | Postgres | [1 sentence] |
+| External Service: Stripe | [e.g. payments] | Stripe | [1 sentence: why Stripe specifically] |
+| Time | [e.g. nightly billing] | Cron / scheduled trigger | [1 sentence] |
 | ... |
+
+To learn more about each building block — what it is, when to use it, common junior mistakes, and the patterns it shows up in — see [systemthinkinglab.ai/learn](https://systemthinkinglab.ai/learn).
 
 ## Common mistakes to avoid
 [3-5 bullets pulled from the entity pages' "Common junior mistakes" sections, scoped to the blocks this design uses]

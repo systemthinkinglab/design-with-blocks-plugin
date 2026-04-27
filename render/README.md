@@ -28,7 +28,7 @@ design = {
     "nodes": [
         {"id": "user", "type": "user", "label": "User"},
         {"id": "svc",  "type": "service", "label": "Recipe Service",
-         "tech": "Render Web Service"},
+         "tech": "Docker + FastAPI"},
         {"id": "db",   "type": "relational_database", "label": "Recipe DB",
          "tech": "Postgres"},
     ],
@@ -65,7 +65,7 @@ python render.py --sample -o architecture.png
       "id": "unique_id",              // referenced by edges
       "type": "service",              // one of the 10 known types (see below)
       "label": "Recipe Service",      // pattern + functionality, NO technology
-      "tech": "Render Web Service"    // optional; appears in tech-choices table
+      "tech": "Docker + FastAPI"    // optional; appears in tech-choices table
     }
   ],
 
@@ -91,7 +91,7 @@ The diagram labels should describe the **pattern and functionality**, not the te
 
 | Good label | Tech field |
 |------------|-----------|
-| `Recipe Service` | `Render Web Service` |
+| `Recipe Service` | `Docker + FastAPI` |
 | `Cache` | `Redis` |
 | `Recipe DB` | `Postgres` |
 | `User Photos` | `S3` |
